@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Маршруты — ДАЛЬШЕ</title>
+    <meta
+        name="description"
+        content="Маршруты проекта ДАЛЬШЕ — горы, города и путешествия на выходные."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;500;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="routes-page">
+
+<header class="site-header">
+
+    <a href="index.html" class="logo">ДАЛЬШЕ</a>
+
+    <nav class="main-nav">
+        <a href="about.html">О нас</a>
+        <a href="routes.html" class="active">Маршруты</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+
+    <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+
+<main>
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section class="routes-intro">
+
+        <div class="container">
+
+            <div class="routes-intro__label">
+                Путешествия · Европа · Природа
+            </div>
+
+            <h1 class="routes-intro__title">
+                Маршруты
+            </h1>
+
+            <div class="routes-intro__bottom">
+
+                <p>
+                    Иногда достаточно выбрать направление.
+                    Остальное начинается уже в дороге.
+                </p>
+
+                <span class="routes-intro__number">
+                    01 / 03
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ROUTES
+    ========================== -->
+
+    <section class="routes-list">
+
+        <div class="container">
+
+            <!-- ГОРЫ -->
+
+            <div class="route-category">
+
+                <button
+                    class="route-category__header"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span class="route-category__number">
+                        01
+                    </span>
+
+                    <span class="route-category__title">
+                        Горы
+                    </span>
+
+                    <span class="route-category__description">
+                        Туда, где заканчивается асфальт.
+                    </span>
+
+                    <span class="route-category__icon">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="route-category__content">
+
+                    <div class="routes-grid">
+
+                        <!-- ALPS -->
+
+                        <article
+                            class="route-card"
+                            data-route="alps"
+                        >
+
+                            <div class="route-card__image">
+                                <img
+                                    src="images/routes/alps.jpg"
+                                    alt="Альпы"
+                                >
+
+                                <span class="route-card__country">
+                                    Австрия
+                                </span>
+                            </div>
+
+                            <div class="route-card__body">
+
+                                <h2>
+                                    Альпы
+                                </h2>
+
+                                <p class="route-card__short">
+                                    Горные тропы, озёра и небольшие
+                                    альпийские деревни.
+                                </p>
+
+                                <div class="route-card__info">
+
+                                    <span>
+                                        <b>Сложность</b>
+                                        Средняя
+                                    </span>
+
+                                    <span>
+                                        <b>Ночёвки</b>
+                                        Палатки / отели
+                                    </span>
+
+                                    <span>
+                                        <b>Дети</b>
+                                        Да
+                                    </span>
+
+                                </div>
+
+                                <span class="route-card__more">
+                                    Подробнее →
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- TATRY -->
+
+                        <article
+                            class="route-card"
+                            data-route="tatry"
+                        >
+
+                            <div class="route-card__image">
+                                <img
+                                    src="images/routes/tatry.jpg"
+                                    alt="Татры"
+                                >
+
+                                <span class="route-card__country">
+                                    Словакия
+                                </span>
+                            </div>
+
+                            <div class="route-card__body">
+
+                                <h2>
+                                    Татры
+                                </h2>
+
+                                <p class="route-card__short">
+                                    Высокие вершины, горные озёра
+                                    и короткие насыщенные треки.
+                                </p>
+
+                                <div class="route-card__info">
+
+                                    <span>
+                                        <b>Сложность</b>
+                                        Средняя
+                                    </span>
+
+                                    <span>
+                                        <b>Ночёвки</b>
+                                        Отели / приюты
+                                    </span>
+
+                                    <span>
+                                        <b>Дети</b>
+                                        С ограничениями
+                                    </span>
+
+                                </div>
+
+                                <span class="route-card__more">
+                                    Подробнее →
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- DOLOMITES -->
+
+                        <article
+                            class="route-card"
+                            data-route="dolomites"
+                        >
+
+                            <div class="route-card__image">
+                                <img
+                                    src="images/routes/dolomites.jpg"
+                                    alt="Доломиты"
+                                >
+
+                                <span class="route-card__country">
+                                    Италия
+                                </span>
+                            </div>
+
+                            <div class="route-card__body">
+
+                                <h2>
+                                    Доломиты
+                                </h2>
+
+                                <p class="route-card__short">
+                                    Скальные массивы, высокогорные
+                                    тропы и просторные долины.
+                                </p>
+
+                                <div class="route-card__info">
+
+                                    <span>
+                                        <b>Сложность</b>
+                                        Высокая
+                                    </span>
+
+                                    <span>
+                                        <b>Ночёвки</b>
+                                        Приюты / отели
+                                    </span>
+
+                                    <span>
+                                        <b>Дети</b>
+                                        Нет
+                                    </span>
+
+                                </div>
+
+                                <span class="route-card__more">
+                                    Подробнее →
+                                </span>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ГОРОДА -->
+
+            <div class="route-category">
+
+                <button
+                    class="route-category__header"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span class="route-category__number">
+                        02
+                    </span>
+
+                    <span class="route-category__title">
+                        Города
+                    </span>
+
+                    <span class="route-category__description">
+                        Туда, где хочется потеряться.
+                    </span>
+
+                    <span class="route-category__icon">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="route-category__content">
+
+                    <div class="routes-grid">
+
+                        <!-- PRAGUE -->
+
+                        <article
+                            class="route-card"
+                            data-route="prague"
+                        >
+
+                            <div class="route-card__image">
+                                <img
+                                    src="images/routes/prague.jpg"
+                                    alt="Прага"
+                                >
+
+                                <span class="route-card__country">
+                                    Чехия
+                                </span>
+                            </div>
+
+                            <div class="route-card__body">
+
+                                <h2>
+                                    Прага
+                                </h2>
+
+                                <p class="route-card__short">
+                                    Старые улицы, мосты, дворы
+                                    и вечерний город.
+                                </p>
+
+                                <div class="route-card__info">
+
+                                    <span>
+                                        <b>Сложность</b>
+                                        Лёгкая
+                                    </span>
+
+                                    <span>
+                                        <b>Ночёвки</b>
+                                        Отели
+                                    </span>
+
+                                    <span>
+                                        <b>Дети</b>
+                                        Да
+                                    </span>
+
+                                </div>
+
+                                <span class="route-card__more">
+                                    Подробнее →
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- BUDAPEST -->
+
+                        <article
+                            class="route-card"
+                            data-route="budapest"
+                        >
+
+                            <div class="route-card__image">
+                                <img
+                                    src="images/routes/budapest.jpg"
+                                    alt="Будапешт"
+                                >
+
+                                <span class="route-card__country">
+                                    Венгрия
+                                </span>
+                            </div>
+
+                            <div class="route-card__body">
+
+                                <h2>
+                                    Будапешт
+                                </h2>
+
+                                <p class="route-card__short">
+                                    Архитектура, Дунай, термы
+                                    и длинные прогулки.
+                                </p>
+
+                                <div class="route-card__info">
+
+                                    <span>
+                                        <b>Сложность</b>
+                                        Лёгкая
+                                    </span>
+
+                                    <span>
+                                        <b>Ночёвки</b>
+                                        Отели
+                                    </span>
+
+                                    <span>
+                                        <b>Дети</b>
+                                        Да
+                                    </span>
+
+                                </div>
+
+                                <span class="route-card__more">
+                                    Подробнее →
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- KRAKOW -->
+
+                        <article
+                            class="route-card"
+                            data-route="krakow"
+                        >
+
+                            <div class="route-card__image">
+                                <img
+                                    src="images/routes/krakow.jpg"
+                                    alt="Краков и Закопане"
+                                >
+
+                                <span class="route-card__country">
+                                    Польша
+                                </span>
+                            </div>
+
+                            <div class="route-card__body">
+
+                                <h2>
+                                    Краков + Закопане
+                                </h2>
+
+                                <p class="route-card__short">
+                                    Средневековый город и горы
+                                    в одном путешествии.
+                                </p>
+
+                                <div class="route-card__info">
+
+                                    <span>
+                                        <b>Сложность</b>
+                                        Лёгкая / средняя
+                                    </span>
+
+                                    <span>
+                                        <b>Ночёвки</b>
+                                        Отели
+                                    </span>
+
+                                    <span>
+                                        <b>Дети</b>
+                                        Да
+                                    </span>
+
+                                </div>
+
+                                <span class="route-card__more">
+                                    Подробнее →
+                                </span>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- WEEKEND -->
+
+            <div class="route-category">
+
+                <button
+                    class="route-category__header"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span class="route-category__number">
+                        03
+                    </span>
+
+                    <span class="route-category__title">
+                        На выходные
+                    </span>
+
+                    <span class="route-category__description">
+                        Иногда нескольких дней вполне достаточно.
+                    </span>
+
+                    <span class="route-category__icon">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="route-category__content">
+
+                    <div class="routes-grid">
+
+                        <!-- WROCLAW -->
+
+                        <article
+                            class="route-card"
+                            data-route="wroclaw"
+                        >
+
+                            <div class="route-card__image">
+                                <img
+                                    src="images/routes/wroclaw.jpg"
+                                    alt="Вроцлав"
+                                >
+
+                                <span class="route-card__country">
+                                    Польша
+                                </span>
+                            </div>
+
+                            <div class="route-card__body">
+
+                                <h2>
+                                    Вроцлав
+                                </h2>
+
+                                <p class="route-card__short">
+                                    Цветные фасады, острова, мосты
+                                    и прогулки без спешки.
+                                </p>
+
+                                <div class="route-card__info">
+
+                                    <span>
+                                        <b>Сложность</b>
+                                        Лёгкая
+                                    </span>
+
+                                    <span>
+                                        <b>Ночёвки</b>
+                                        Отель
+                                    </span>
+
+                                    <span>
+                                        <b>Дети</b>
+                                        Да
+                                    </span>
+
+                                </div>
+
+                                <span class="route-card__more">
+                                    Подробнее →
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- GDANSK -->
+
+                        <article
+                            class="route-card"
+                            data-route="gdansk"
+                        >
+
+                            <div class="route-card__image">
+                                <img
+                                    src="images/routes/gdansk.jpg"
+                                    alt="Гданьск"
+                                >
+
+                                <span class="route-card__country">
+                                    Польша
+                                </span>
+                            </div>
+
+                            <div class="route-card__body">
+
+                                <h2>
+                                    Гданьск
+                                </h2>
+
+                                <p class="route-card__short">
+                                    Балтийское море, старый город
+                                    и длинные прогулки у воды.
+                                </p>
+
+                                <div class="route-card__info">
+
+                                    <span>
+                                        <b>Сложность</b>
+                                        Лёгкая
+                                    </span>
+
+                                    <span>
+                                        <b>Ночёвки</b>
+                                        Отель
+                                    </span>
+
+                                    <span>
+                                        <b>Дети</b>
+                                        Да
+                                    </span>
+
+                                </div>
+
+                                <span class="route-card__more">
+                                    Подробнее →
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- KARLOVY VARY -->
+
+                        <article
+                            class="route-card"
+                            data-route="karlovy"
+                        >
+
+                            <div class="route-card__image">
+                                <img
+                                    src="images/routes/karlovy.jpg"
+                                    alt="Карловы Вары"
+                                >
+
+                                <span class="route-card__country">
+                                    Чехия
+                                </span>
+                            </div>
+
+                            <div class="route-card__body">
+
+                                <h2>
+                                    Карловы Вары
+                                </h2>
+
+                                <p class="route-card__short">
+                                    Курортный город, лесные тропы
+                                    и спокойные выходные.
+                                </p>
+
+                                <div class="route-card__info">
+
+                                    <span>
+                                        <b>Сложность</b>
+                                        Лёгкая
+                                    </span>
+
+                                    <span>
+                                        <b>Ночёвки</b>
+                                        Отель
+                                    </span>
+
+                                    <span>
+                                        <b>Дети</b>
+                                        Да
+                                    </span>
+
+                                </div>
+
+                                <span class="route-card__more">
+                                    Подробнее →
+                                </span>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TEST
+    ========================== -->
+
+    <section class="route-quiz" id="routeQuiz">
+
+        <div class="container">
+
+            <div class="quiz">
+
+                <div class="quiz__intro">
+
+                    <span class="section-label">
+                        Не знаете, куда?
+                    </span>
+
+                    <h2>
+                        Куда дальше?
+                    </h2>
+
+                    <p>
+                        Ответьте на несколько вопросов,
+                        и мы попробуем подобрать маршрут.
+                    </p>
+
+                    <button
+                        class="quiz__start"
+                        type="button"
+                    >
+                        Начать тест
+                    </button>
+
+                </div>
+
+
+                <div class="quiz__body">
+
+                    <div class="quiz__progress">
+
+                        <span class="quiz__progress-text">
+                            Вопрос 1 из 5
+                        </span>
+
+                        <div class="quiz__progress-line">
+                            <span></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="quiz__question">
+
+                        <h3 id="quizQuestion">
+                            Сколько у вас времени?
+                        </h3>
+
+                        <div
+                            class="quiz__answers"
+                            id="quizAnswers"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="quiz__navigation">
+
+                        <button
+                            class="quiz__back"
+                            type="button"
+                        >
+                            ← Назад
+                        </button>
+
+                        <button
+                            class="quiz__next"
+                            type="button"
+                            disabled
+                        >
+                            Далее →
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quiz__result">
+
+                    <span class="section-label">
+                        Ваше направление
+                    </span>
+
+                    <h2 id="quizResultTitle">
+                        Альпы
+                    </h2>
+
+                    <p id="quizResultText">
+                        Кажется, вам подойдут горы.
+                    </p>
+
+                    <button
+                        class="quiz__result-button"
+                        type="button"
+                    >
+                        Посмотреть маршрут →
+                    </button>
+
+                    <button
+                        class="quiz__restart"
+                        type="button"
+                    >
+                        Пройти ещё раз
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     MODAL
+========================== -->
+
+<div
+    class="route-modal"
+    id="routeModal"
+    aria-hidden="true"
+>
+
+    <div class="route-modal__backdrop"></div>
+
+    <div
+        class="route-modal__window"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+    >
+
+        <button
+            class="route-modal__close"
+            type="button"
+            aria-label="Закрыть"
+        >
+            ×
+        </button>
+
+
+        <div class="route-modal__gallery">
+
+            <div class="route-modal__main-image">
+                <img
+                    id="modalMainImage"
+                    src=""
+                    alt=""
+                >
+            </div>
+
+            <div
+                class="route-modal__thumbs"
+                id="modalThumbs"
+            ></div>
+
+        </div>
+
+
+        <div class="route-modal__content">
+
+            <div class="route-modal__country" id="modalCountry">
+                Австрия
+            </div>
+
+            <h2 id="modalTitle">
+                Альпы
+            </h2>
+
+            <div
+                class="route-modal__facts"
+                id="modalFacts"
+            ></div>
+
+            <div class="route-modal__description">
+
+                <p id="modalDescription"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div>
+                <a href="index.html" class="logo">
+                    ДАЛЬШЕ
+                </a>
+
+                <p>
+                    Путешествия, которые начинаются
+                    с желания уехать.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <a href="about.html">О нас</a>
+                <a href="routes.html">Маршруты</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contact.html">Контакты</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 ДАЛЬШЕ
+            </span>
+
+            <div>
+                <a href="#">Telegram</a>
+                <a href="#">Instagram</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

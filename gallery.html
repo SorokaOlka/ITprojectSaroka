@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Галерея — ДАЛЬШЕ</title>
+
+    <meta
+        name="description"
+        content="Галерея проекта ДАЛЬШЕ — фотографии из путешествий по Европе, горам, городам и дорогам."
+    >
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Скрипт -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="index.html" class="site-logo">
+            ДАЛЬШЕ
+        </a>
+
+        <nav class="site-nav">
+            <a href="about.html">О нас</a>
+            <a href="routes.html">Маршруты</a>
+            <a href="gallery.html" class="active">Галерея</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+
+        <button
+            class="menu-toggle"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- =========================================
+     GALLERY HERO
+========================================= -->
+
+<section class="gallery-hero">
+
+    <div class="gallery-hero__image">
+        <img
+            src="images/gallery/gallery-hero.jpg"
+            alt="Горный пейзаж"
+        >
+    </div>
+
+    <div class="gallery-hero__overlay"></div>
+
+    <div class="gallery-hero__content">
+
+        <div class="gallery-hero__label">
+            Галерея
+        </div>
+
+        <h1 class="gallery-hero__title">
+            Моменты,<br>
+            ради которых<br>
+            хочется ехать дальше.
+        </h1>
+
+        <div class="gallery-hero__bottom">
+            <span>Путешествия · Европа · Природа</span>
+            <span>01 / 05</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     INTRO
+========================================= -->
+
+<section class="gallery-intro">
+
+    <div class="container">
+
+        <div class="gallery-intro__grid">
+
+            <div class="gallery-intro__label">
+                В пути
+            </div>
+
+            <div class="gallery-intro__text">
+                <p>
+                    Здесь остаются моменты из поездок —
+                    случайные дороги, горные тропы, незнакомые города
+                    и места, куда хочется вернуться.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     MAIN GALLERY
+========================================= -->
+
+<section class="gallery-main">
+
+    <div class="container">
+
+        <div class="gallery-grid">
+
+
+            <!-- PHOTO 01 -->
+
+            <figure
+                class="gallery-item gallery-item--large gallery-lightbox-trigger"
+                data-image="images/gallery/photo-01.jpg"
+                data-title="Туда, где заканчивается асфальт."
+                data-location="Альпы / Австрия"
+            >
+
+                <div class="gallery-item__image">
+                    <img
+                        src="images/gallery/photo-01.jpg"
+                        alt="Горная дорога"
+                        loading="lazy"
+                    >
+                </div>
+
+                <figcaption class="gallery-item__caption">
+                    <span>Альпы / Австрия</span>
+                    <span>01</span>
+                </figcaption>
+
+            </figure>
+
+
+            <!-- PHOTO 02 -->
+
+            <figure
+                class="gallery-item gallery-item--small gallery-lightbox-trigger"
+                data-image="images/gallery/photo-02.jpg"
+                data-title="Иногда нужно просто идти."
+                data-location="Горы / Европа"
+            >
+
+                <div class="gallery-item__image">
+                    <img
+                        src="images/gallery/photo-02.jpg"
+                        alt="Поход в горах"
+                        loading="lazy"
+                    >
+                </div>
+
+                <figcaption class="gallery-item__caption">
+                    <span>Горы / Европа</span>
+                    <span>02</span>
+                </figcaption>
+
+            </figure>
+
+
+            <!-- PHOTO 03 -->
+
+            <figure
+                class="gallery-item gallery-item--small gallery-lightbox-trigger"
+                data-image="images/gallery/photo-03.jpg"
+                data-title="Города тоже умеют удивлять."
+                data-location="Европа"
+            >
+
+                <div class="gallery-item__image">
+                    <img
+                        src="images/gallery/photo-03.jpg"
+                        alt="Европейский город"
+                        loading="lazy"
+                    >
+                </div>
+
+                <figcaption class="gallery-item__caption">
+                    <span>Города / Европа</span>
+                    <span>03</span>
+                </figcaption>
+
+            </figure>
+
+
+            <!-- PHOTO 04 -->
+
+            <figure
+                class="gallery-item gallery-item--wide gallery-lightbox-trigger"
+                data-image="images/gallery/photo-04.jpg"
+                data-title="Дорога начинается там, где заканчивается план."
+                data-location="Дорога / Европа"
+            >
+
+                <div class="gallery-item__image">
+                    <img
+                        src="images/gallery/photo-04.jpg"
+                        alt="Дорога среди природы"
+                        loading="lazy"
+                    >
+                </div>
+
+                <figcaption class="gallery-item__caption">
+                    <span>Дорога / Европа</span>
+                    <span>04</span>
+                </figcaption>
+
+            </figure>
+
+
+            <!-- PHOTO 05 -->
+
+            <figure
+                class="gallery-item gallery-item--medium gallery-lightbox-trigger"
+                data-image="images/gallery/photo-05.jpg"
+                data-title="Иногда нескольких дней вполне достаточно."
+                data-location="На выходные"
+            >
+
+                <div class="gallery-item__image">
+                    <img
+                        src="images/gallery/photo-05.jpg"
+                        alt="Путешествие на выходные"
+                        loading="lazy"
+                    >
+                </div>
+
+                <figcaption class="gallery-item__caption">
+                    <span>На выходные</span>
+                    <span>05</span>
+                </figcaption>
+
+            </figure>
+
+
+            <!-- PHOTO 06 -->
+
+            <figure
+                class="gallery-item gallery-item--medium gallery-lightbox-trigger"
+                data-image="images/gallery/photo-06.jpg"
+                data-title="Чем дальше, тем интереснее."
+                data-location="Европа"
+            >
+
+                <div class="gallery-item__image">
+                    <img
+                        src="images/gallery/photo-06.jpg"
+                        alt="Путешествие по Европе"
+                        loading="lazy"
+                    >
+                </div>
+
+                <figcaption class="gallery-item__caption">
+                    <span>Европа</span>
+                    <span>06</span>
+                </figcaption>
+
+            </figure>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     LARGE PHOTO
+========================================= -->
+
+<section class="gallery-feature">
+
+    <div class="gallery-feature__image gallery-lightbox-trigger"
+         data-image="images/gallery/photo-07.jpg"
+         data-title="Иногда дорога — это и есть место назначения."
+         data-location="В пути">
+
+        <img
+            src="images/gallery/photo-07.jpg"
+            alt="Дорога в горах"
+            loading="lazy"
+        >
+
+        <div class="gallery-feature__overlay"></div>
+
+        <div class="gallery-feature__content">
+
+            <span class="gallery-feature__label">
+                В пути
+            </span>
+
+            <h2>
+                Иногда дорога —<br>
+                это и есть место назначения.
+            </h2>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FINAL CTA
+========================================= -->
+
+<section class="gallery-final">
+
+    <div class="container">
+
+        <div class="gallery-final__inner">
+
+            <span class="gallery-final__label">
+                Дальше?
+            </span>
+
+            <h2>
+                Посмотреть,<br>
+                куда можно уехать.
+            </h2>
+
+            <a href="routes.html" class="button button--light">
+                Смотреть маршруты
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================
+     LIGHTBOX
+========================================= -->
+
+<div class="gallery-lightbox" aria-hidden="true">
+
+    <button
+        class="gallery-lightbox__close"
+        aria-label="Закрыть"
+    >
+        ×
+    </button>
+
+    <button
+        class="gallery-lightbox__prev"
+        aria-label="Предыдущая фотография"
+    >
+        ←
+    </button>
+
+    <div class="gallery-lightbox__content">
+
+        <img
+            src=""
+            alt=""
+            class="gallery-lightbox__image"
+        >
+
+        <div class="gallery-lightbox__info">
+
+            <div class="gallery-lightbox__title"></div>
+
+            <div class="gallery-lightbox__location"></div>
+
+        </div>
+
+    </div>
+
+    <button
+        class="gallery-lightbox__next"
+        aria-label="Следующая фотография"
+    >
+        →
+    </button>
+
+</div>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="site-logo">
+                    ДАЛЬШЕ
+                </a>
+
+                <p>
+                    Путешествия, которые начинаются
+                    с желания уехать.
+                </p>
+
+            </div>
+
+            <div class="footer-nav">
+
+                <a href="about.html">О нас</a>
+                <a href="routes.html">Маршруты</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="contact.html">Контакты</a>
+
+            </div>
+
+            <div class="footer-social">
+
+                <a href="#" target="_blank">
+                    Telegram
+                </a>
+
+                <a href="#" target="_blank">
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 ДАЛЬШЕ
+            </span>
+
+            <span>
+                Путешествуй дальше.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+/* =========================================
+   GALLERY LIGHTBOX
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const items = document.querySelectorAll(
+        ".gallery-lightbox-trigger"
+    );
+
+    const lightbox = document.querySelector(
+        ".gallery-lightbox"
+    );
+
+    const lightboxImage = document.querySelector(
+        ".gallery-lightbox__image"
+    );
+
+    const lightboxTitle = document.querySelector(
+        ".gallery-lightbox__title"
+    );
+
+    const lightboxLocation = document.querySelector(
+        ".gallery-lightbox__location"
+    );
+
+    const closeButton = document.querySelector(
+        ".gallery-lightbox__close"
+    );
+
+    const prevButton = document.querySelector(
+        ".gallery-lightbox__prev"
+    );
+
+    const nextButton = document.querySelector(
+        ".gallery-lightbox__next"
+    );
+
+    let currentIndex = 0;
+
+
+    function getGalleryData() {
+
+        return Array.from(items).map(item => ({
+            image: item.dataset.image,
+            title: item.dataset.title || "",
+            location: item.dataset.location || ""
+        }));
+
+    }
+
+
+    function openLightbox(index) {
+
+        const gallery = getGalleryData();
+
+        if (!gallery.length) return;
+
+        currentIndex = index;
+
+        const item = gallery[currentIndex];
+
+        lightboxImage.src = item.image;
+        lightboxImage.alt = item.title;
+
+        lightboxTitle.textContent = item.title;
+        lightboxLocation.textContent = item.location;
+
+        lightbox.classList.add("is-open");
+
+        lightbox.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+        document.body.classList.add(
+            "lightbox-open"
+        );
+
+    }
+
+
+    function closeLightbox() {
+
+        lightbox.classList.remove(
+            "is-open"
+        );
+
+        lightbox.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+        document.body.classList.remove(
+            "lightbox-open"
+        );
+
+    }
+
+
+    function showNext() {
+
+        const gallery = getGalleryData();
+
+        currentIndex =
+            (currentIndex + 1) % gallery.length;
+
+        openLightbox(currentIndex);
+
+    }
+
+
+    function showPrevious() {
+
+        const gallery = getGalleryData();
+
+        currentIndex =
+            (currentIndex - 1 + gallery.length)
+            % gallery.length;
+
+        openLightbox(currentIndex);
+
+    }
+
+
+    items.forEach((item, index) => {
+
+        item.addEventListener(
+            "click",
+            () => openLightbox(index)
+        );
+
+    });
+
+
+    closeButton.addEventListener(
+        "click",
+        closeLightbox
+    );
+
+
+    nextButton.addEventListener(
+        "click",
+        showNext
+    );
+
+
+    prevButton.addEventListener(
+        "click",
+        showPrevious
+    );
+
+
+    lightbox.addEventListener(
+        "click",
+        event => {
+
+            if (
+                event.target === lightbox
+            ) {
+                closeLightbox();
+            }
+
+        }
+    );
+
+
+    document.addEventListener(
+        "keydown",
+        event => {
+
+            if (
+                !lightbox.classList.contains(
+                    "is-open"
+                )
+            ) {
+                return;
+            }
+
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+
+            if (event.key === "ArrowRight") {
+                showNext();
+            }
+
+            if (event.key === "ArrowLeft") {
+                showPrevious();
+            }
+
+        }
+    );
+
+});
+
+</script>
+
+</body>
+</html>
