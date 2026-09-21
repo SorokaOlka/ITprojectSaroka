@@ -337,80 +337,143 @@
 
         <!-- ================= GALLERY ================= -->
 
-        <section class="gallery-preview section">
+        <section class="home-gallery">
 
-            <div class="container">
+    <div class="container">
 
-                <div class="section-heading gallery-heading">
+        <div class="home-gallery__header">
 
-                    <div>
+            <div class="home-gallery__label">
+                Мгновения в пути
+            </div>
 
-                        <span class="section-number">
-                            04
-                        </span>
+            <div class="home-gallery__heading">
 
-                        <h2>
-                            Мгновения<br>
-                            в пути.
-                        </h2>
+                <h2>
+                    Дороги,<br>
+                    которые хочется
+                    запомнить.
+                </h2>
 
-                    </div>
-
-                    <a href="gallery.html"
-                       class="text-link">
-
-                        Смотреть всю галерею
-                        <span>→</span>
-
-                    </a>
-
-                </div>
-
-
-                <div class="gallery-grid">
-
-                    <a href="gallery.html"
-                       class="gallery-item gallery-item-large">
-
-                        <img src="img/6-photo.jpg"
-                             alt="Горный пейзаж">
-
-                    </a>
-
-
-                    <a href="gallery.html"
-                       class="gallery-item">
-
-                        <img src="img/9-photo.jpg"
-                             alt="Путешествие по Европе">
-
-                    </a>
-
-
-                    <a href="gallery.html"
-                       class="gallery-item">
-
-                        <img src="img/8-photo.jpg"
-                             alt="Дорога среди гор">
-
-                    </a>
-
-
-                    <a href="gallery.html"
-                       class="gallery-item gallery-item-wide">
-
-                        <img src="img/7-photo.jpg"
-                             alt="Природа">
-
-                    </a>
-
-
-
-                </div>
+                <a
+                    href="gallery.html"
+                    class="home-gallery__link"
+                >
+                    Смотреть всю галерею
+                    <span>↗</span>
+                </a>
 
             </div>
 
-        </section>
+        </div>
+
+
+        <div class="home-gallery__grid">
+
+            <!-- Большая фотография -->
+
+            <a
+                href="gallery.html"
+                class="home-gallery__item home-gallery__item--large"
+            >
+
+                <div class="home-gallery__image">
+
+                    <img
+                        src="img/9-photo.jpg"
+                        alt="Горный пейзаж"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="home-gallery__caption">
+                    <span>Поход в горах</span>
+                    <span>01</span>
+                </div>
+
+            </a>
+
+
+            <!-- Вертикальная фотография -->
+
+            <a
+                href="gallery.html"
+                class="home-gallery__item home-gallery__item--vertical"
+            >
+
+                <div class="home-gallery__image">
+
+                    <img
+                        src="img/8-photo.jpg"
+                        at="Поход в горах"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="home-gallery__caption">
+                    <span>Альпы / Италия</span>
+                    <span>02</span>
+                </div>
+
+            </a>
+
+
+            <!-- Маленькая фотография -->
+
+            <a
+                href="gallery.html"
+                class="home-gallery__item home-gallery__item--small"
+            >
+
+                <div class="home-gallery__image">
+
+                    <img
+                        src="img/14-photo.jpg"
+                        alt="Европейский город"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="home-gallery__caption">
+                    <span>Города</span>
+                    <span>03</span>
+                </div>
+
+            </a>
+
+
+            <!-- Нижняя широкая фотография -->
+
+            <a
+                href="gallery.html"
+                class="home-gallery__item home-gallery__item--wide"
+            >
+
+                <div class="home-gallery__image">
+
+                    <img
+                        src="img/17-photo.jpg"
+                        alt="Горные пейзажи"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="home-gallery__caption">
+                    <span>Горные пейзажи</span>
+                    <span>04</span>
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- ================= FINAL CTA ================= -->

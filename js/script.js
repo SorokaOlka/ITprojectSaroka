@@ -373,9 +373,9 @@ document.addEventListener("DOMContentLoaded", () => {
             children: "Да",
 
             images: [
-                "images/routes/alps.jpg",
-                "images/routes/alps-02.jpg",
-                "images/routes/alps-03.jpg"
+                "img/1-photo.jpg",
+                "img/2-photo.jpg",
+                "img/3-photo.jpg"
             ],
 
             description:
@@ -404,9 +404,9 @@ document.addEventListener("DOMContentLoaded", () => {
             children: "С ограничениями",
 
             images: [
-                "images/routes/tatry.jpg",
-                "images/routes/tatry-02.jpg",
-                "images/routes/tatry-03.jpg"
+                "img/4-photo.jpg",
+                "img/5-photo.jpg",
+                "img/6-photo.jpg"
             ],
 
             description:
@@ -434,9 +434,9 @@ document.addEventListener("DOMContentLoaded", () => {
             children: "Нет",
 
             images: [
-                "images/routes/dolomites.jpg",
-                "images/routes/dolomites-02.jpg",
-                "images/routes/dolomites-03.jpg"
+                "img/1-photo.jpg",
+                "img/2-photo.jpg",
+                "img/3-photo.jpg"
             ],
 
             description:
@@ -464,9 +464,9 @@ document.addEventListener("DOMContentLoaded", () => {
             children: "Да",
 
             images: [
-                "images/routes/prague.jpg",
-                "images/routes/prague-02.jpg",
-                "images/routes/prague-03.jpg"
+                "img/1-photo.jpg",
+                "img/2-photo.jpg",
+                "img/3-photo.jpg"
             ],
 
             description:
@@ -494,9 +494,9 @@ document.addEventListener("DOMContentLoaded", () => {
             children: "Да",
 
             images: [
-                "images/routes/budapest.jpg",
-                "images/routes/budapest-02.jpg",
-                "images/routes/budapest-03.jpg"
+                "img/1-photo.jpg",
+                "img/2-photo.jpg",
+                "img/3-photo.jpg"
             ],
 
             description:
@@ -523,9 +523,9 @@ document.addEventListener("DOMContentLoaded", () => {
             children: "Да",
 
             images: [
-                "images/routes/krakow.jpg",
-                "images/routes/krakow-02.jpg",
-                "images/routes/krakow-03.jpg"
+                "img/1-photo.jpg",
+                "img/2-photo.jpg",
+                "img/3-photo.jpg"
             ],
 
             description:
@@ -552,9 +552,9 @@ document.addEventListener("DOMContentLoaded", () => {
             children: "Да",
 
             images: [
-                "images/routes/wroclaw.jpg",
-                "images/routes/wroclaw-02.jpg",
-                "images/routes/wroclaw-03.jpg"
+                "img/1-photo.jpg",
+                "img/2-photo.jpg",
+                "img/3-photo.jpg"
             ],
 
             description:
@@ -581,9 +581,9 @@ document.addEventListener("DOMContentLoaded", () => {
             children: "Да",
 
             images: [
-                "images/routes/gdansk.jpg",
-                "images/routes/gdansk-02.jpg",
-                "images/routes/gdansk-03.jpg"
+                "img/1-photo.jpg",
+                "img/2-photo.jpg",
+                "img/3-photo.jpg"
             ],
 
             description:
@@ -610,9 +610,9 @@ document.addEventListener("DOMContentLoaded", () => {
             children: "Да",
 
             images: [
-                "images/routes/karlovy.jpg",
-                "images/routes/karlovy-02.jpg",
-                "images/routes/karlovy-03.jpg"
+                "img/1-photo.jpg",
+                "img/2-photo.jpg",
+                "img/3-photo.jpg"
             ],
 
             description:

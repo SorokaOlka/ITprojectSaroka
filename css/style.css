@@ -674,54 +674,418 @@ button {
 }
 
 
-/* =========================================================
-   GALLERY
-========================================================= */
+/* =========================================
+    HOME GALLERY
+    Только для галереи главной страницы
+ ========================================= */
 
-.gallery-heading {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+.home-gallery {
+    position: relative;
 
-    gap: 40px;
-}
-
-.gallery-heading .text-link {
-    margin-bottom: 10px;
-}
-
-.gallery-grid {
-    display: grid;
-
-    grid-template-columns: 1.2fr 0.8fr 0.8fr;
-
-    grid-template-rows: 300px 400px;
-
-    gap: 18px;
-}
-
-.gallery-item {
-    display: block;
+    padding:
+        var(--section-space)
+        0;
 
     overflow: hidden;
 }
 
-.gallery-item img {
-    transition: transform 0.7s cubic-bezier(0.2, 0.65, 0.3, 1);
+
+/* =========================================
+   HEADER
+========================================= */
+
+.home-gallery__header {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    gap: 8vw;
+
+    margin-bottom: 80px;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.05);
+.home-gallery__label {
+    padding-top: 8px;
+
+    color: var(--accent);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
 }
 
-.gallery-item-large {
-    grid-row: span 2;
+.home-gallery__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.gallery-item-wide {
-    grid-column: span 2;
+.home-gallery__heading h2 {
+    max-width: 900px;
+
+    margin: 0;
+
+    color: var(--text);
+
+    font-family:
+        var(--font-heading,
+        "Unbounded",
+        sans-serif);
+
+    font-size: clamp(40px, 5.5vw, 76px);
+    font-weight: 500;
+
+    line-height: 1.08;
+
+    letter-spacing: -0.05em;
 }
 
+
+/* =========================================
+   LINK
+========================================= */
+
+.home-gallery__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-top: 45px;
+
+    color: var(--text);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease;
+}
+
+.home-gallery__link span {
+    display: inline-block;
+
+    color: var(--accent);
+
+    font-size: 22px;
+    font-weight: 300;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.home-gallery__link:hover {
+    color: var(--accent);
+}
+
+.home-gallery__link:hover span {
+    transform:
+        translate(5px, -5px);
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.home-gallery__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(12, minmax(0, 1fr));
+
+    column-gap: 24px;
+    row-gap: 70px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   COMMON ITEM
+========================================= */
+
+.home-gallery__item {
+    display: block;
+
+    margin: 0;
+
+    color: inherit;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.home-gallery__image {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: var(--background-light);
+}
+
+.home-gallery__image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s
+        cubic-bezier(0.2, 0.7, 0.2, 1),
+        opacity 0.5s ease;
+}
+
+.home-gallery__item:hover
+.home-gallery__image img {
+    transform: scale(1.045);
+
+    opacity: 0.84;
+}
+
+
+/* =========================================
+   LARGE PHOTO
+========================================= */
+
+.home-gallery__item--large {
+    grid-column: 1 / 8;
+}
+
+.home-gallery__item--large
+.home-gallery__image {
+    aspect-ratio: 4 / 5;
+}
+
+
+/* =========================================
+   VERTICAL PHOTO
+========================================= */
+
+.home-gallery__item--vertical {
+    grid-column: 9 / 13;
+
+    margin-top: 110px;
+}
+
+.home-gallery__item--vertical
+.home-gallery__image {
+    aspect-ratio: 3 / 4;
+}
+
+
+/* =========================================
+   SMALL PHOTO
+========================================= */
+
+.home-gallery__item--small {
+    grid-column: 2 / 6;
+
+    margin-top: 10px;
+}
+
+.home-gallery__item--small
+.home-gallery__image {
+    aspect-ratio: 4 / 5;
+}
+
+
+/* =========================================
+   WIDE PHOTO
+========================================= */
+
+.home-gallery__item--wide {
+    grid-column: 7 / 13;
+
+    margin-top: -10px;
+}
+
+.home-gallery__item--wide
+.home-gallery__image {
+    aspect-ratio: 16 / 9;
+}
+
+
+/* =========================================
+   CAPTION
+========================================= */
+
+.home-gallery__caption {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding-top: 14px;
+
+    color: var(--text-muted);
+
+    font-size: 10px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+}
+
+.home-gallery__item:hover
+.home-gallery__caption {
+    color: var(--text);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .home-gallery__header {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-bottom: 55px;
+    }
+
+    .home-gallery__label {
+        padding-top: 0;
+    }
+
+    .home-gallery__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        column-gap: 18px;
+        row-gap: 50px;
+    }
+
+
+    /*
+       На планшете перестраиваем
+       композицию полностью.
+    */
+
+    .home-gallery__item--large {
+        grid-column: 1 / 2;
+    }
+
+    .home-gallery__item--vertical {
+        grid-column: 2 / 3;
+
+        margin-top: 80px;
+    }
+
+    .home-gallery__item--small {
+        grid-column: 1 / 2;
+
+        margin-top: 0;
+    }
+
+    .home-gallery__item--wide {
+        grid-column: 2 / 3;
+
+        margin-top: 0;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .home-gallery {
+        padding:
+            90px
+            0;
+    }
+
+    .home-gallery__header {
+        margin-bottom: 45px;
+    }
+
+    .home-gallery__heading h2 {
+        font-size: 38px;
+
+        line-height: 1.08;
+    }
+
+    .home-gallery__link {
+        margin-top: 30px;
+
+        font-size: 10px;
+    }
+
+
+    /*
+       Одна колонка.
+       Никаких отрицательных margin,
+       чтобы ничего не ломалось.
+    */
+
+    .home-gallery__grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .home-gallery__item--large,
+    .home-gallery__item--vertical,
+    .home-gallery__item--small,
+    .home-gallery__item--wide {
+        grid-column: 1;
+
+        margin-top: 0;
+    }
+
+
+    /* Разные пропорции на мобильном */
+
+    .home-gallery__item--large
+    .home-gallery__image {
+        aspect-ratio: 4 / 5;
+    }
+
+    .home-gallery__item--vertical
+    .home-gallery__image {
+        aspect-ratio: 4 / 5;
+    }
+
+    .home-gallery__item--small
+    .home-gallery__image {
+        aspect-ratio: 4 / 3;
+    }
+
+    .home-gallery__item--wide
+    .home-gallery__image {
+        aspect-ratio: 4 / 3;
+    }
+
+
+    .home-gallery__caption {
+        padding-top: 11px;
+
+        font-size: 9px;
+    }
+
+}
 
 /* =========================================================
    FINAL CTA
@@ -4171,6 +4535,7 @@ body.menu-open {
 
 .contact-hero__label {
     margin-bottom: 35px;
+    margin-top: 15px;
 
     color: var(--accent);
 
@@ -4225,9 +4590,7 @@ body.menu-open {
 ========================================= */
 
 .contact-info {
-    padding:
-        var(--section-space)
-        0;
+    padding: 20px 0px;
 }
 
 .contact-info__grid {
@@ -4245,8 +4608,6 @@ body.menu-open {
     min-height: 280px;
 
     padding: 30px;
-
-    border-top: 1px solid var(--border);
 
     display: flex;
     flex-direction: column;
